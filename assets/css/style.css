@@ -4,6 +4,11 @@
     box-sizing:border-box;
 }
 
+body{
+    background-color:rgba(1, 0, 0, 0.9);
+}
+
+
 .disp-grid{
     height:100vh;
     display:grid;
@@ -31,17 +36,38 @@ div#header > .logo{
 }
 .disp-grid > div#navbar{
     grid-column:1/2;
-    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .disp-grid > div#navbar > ul {
     list-style-type:none;
+    border:1px solid red;
+    height:60vh;
+    display: flex;
+    flex-flow:column;
+    align-self:center;
+    justify-content:space-around;
     text-align:center;
 }
 
-div#navbar > ul > li:first-child{
-    font-size:20px;
+.disp-grid > div#navbar > ul > li > a{
+    text-decoration:none;
+    color:black;
+    box-shadow:1px 2px 3px black;
+    background-color:white;
+    padding:10px 60px;
+    display:flex;
+    justify-content:center;
+    width:50%;
+    margin:0 auto;
+    
 }
+
+.disp-grid > div#navbar > ul > li > a:hover{
+    background-color:rgb(97, 97, 172);
+}
+
+
 .disp-grid > div#main{
     
     grid-column:2/4;
